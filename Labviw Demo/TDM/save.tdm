@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<usi:tdm xmlns:usi="http://www.ni.com/Schemas/USI/1_0" version="1.0">
+
+  <usi:documentation>
+    <usi:exporter>National Instruments USI</usi:exporter>
+    <usi:exporterVersion>1.9</usi:exporterVersion>
+  </usi:documentation>
+
+  <usi:model modelName="National Instruments USI generated meta file" modelVersion="1.0">
+    <usi:include nsUri="http://www.ni.com/DataModels/USI/TDM/1_0"/>
+  </usi:model>
+
+  <usi:include>
+    <file byteOrder="littleEndian" url="save.tdx">
+      <block byteOffset="0" id="inc0" length="100" valueType="eFloat64Usi"/>
+      <block byteOffset="800" id="inc1" length="100" valueType="eFloat64Usi"/>
+    </file>
+  </usi:include>
+
+  <usi:data>
+    <double_sequence id="usi1">
+      <values external="inc0"/>
+    </double_sequence>
+    <double_sequence id="usi2">
+      <values external="inc1"/>
+    </double_sequence>
+    <tdm_root id="usi3">
+      <name>Untitled</name>
+      <instance_attributes>
+        <time_attribute name="wf_create_time">2016-04-05T17:57:17.6810002326965332</time_attribute>
+      </instance_attributes>
+      <channelgroups>#xpointer(id("usi4"))</channelgroups>
+    </tdm_root>
+    <tdm_channelgroup id="usi4">
+      <name>Untitled</name>
+      <root>#xpointer(id("usi3"))</root>
+      <channels>#xpointer(id("usi5") id("usi6"))</channels>
+      <submatrices>#xpointer(id("usi7") id("usi8"))</submatrices>
+    </tdm_channelgroup>
+    <tdm_channel id="usi5">
+      <name>Sine</name>
+      <group>#xpointer(id("usi4"))</group>
+      <unit_string></unit_string>
+      <datatype>DT_DOUBLE</datatype>
+      <minimum>-0.999990327803279</minimum>
+      <maximum>0.99994295422894</maximum>
+      <instance_attributes>
+        <double_attribute name="wf_increment">0.001</double_attribute>
+        <long_attribute name="wf_samples">100</long_attribute>
+        <double_attribute name="wf_start_offset">0</double_attribute>
+        <time_attribute name="wf_start_time">2016-04-05T17:57:17.6810002326965332</time_attribute>
+        <string_attribute name="wf_time_pref">
+          <s>relative</s>
+        </string_attribute>
+        <string_attribute name="wf_xname">
+          <s>Time</s>
+        </string_attribute>
+        <string_attribute name="wf_xunit_string">
+          <s>s</s>
+        </string_attribute>
+      </instance_attributes>
+      <local_columns>#xpointer(id("usi9"))</local_columns>
+    </tdm_channel>
+    <tdm_channel id="usi6">
+      <name>Sawtooth</name>
+      <group>#xpointer(id("usi4"))</group>
+      <unit_string></unit_string>
+      <datatype>DT_DOUBLE</datatype>
+      <minimum>-0.918200000000005</minimum>
+      <maximum>0.997599999999995</maximum>
+      <instance_attributes>
+        <double_attribute name="wf_increment">0.001</double_attribute>
+        <long_attribute name="wf_samples">100</long_attribute>
+        <double_attribute name="wf_start_offset">0</double_attribute>
+        <time_attribute name="wf_start_time">2016-04-05T17:57:17.6810002326965332</time_attribute>
+        <string_attribute name="wf_time_pref">
+          <s>relative</s>
+        </string_attribute>
+        <string_attribute name="wf_xname">
+          <s>Time</s>
+        </string_attribute>
+        <string_attribute name="wf_xunit_string">
+          <s>s</s>
+        </string_attribute>
+      </instance_attributes>
+      <local_columns>#xpointer(id("usi10"))</local_columns>
+    </tdm_channel>
+    <submatrix id="usi7">
+      <name>Sine</name>
+      <measurement>#xpointer(id("usi4"))</measurement>
+      <number_of_rows>100</number_of_rows>
+      <local_columns>#xpointer(id("usi9"))</local_columns>
+    </submatrix>
+    <submatrix id="usi8">
+      <name>Sawtooth</name>
+      <measurement>#xpointer(id("usi4"))</measurement>
+      <number_of_rows>100</number_of_rows>
+      <local_columns>#xpointer(id("usi10"))</local_columns>
+    </submatrix>
+    <localcolumn id="usi9">
+      <name>Sine</name>
+      <measurement_quantity>#xpointer(id("usi5"))</measurement_quantity>
+      <submatrix>#xpointer(id("usi7"))</submatrix>
+      <global_flag>15</global_flag>
+      <independent>0</independent>
+      <sequence_representation>explicit</sequence_representation>
+      <values>#xpointer(id("usi1"))</values>
+    </localcolumn>
+    <localcolumn id="usi10">
+      <name>Sawtooth</name>
+      <measurement_quantity>#xpointer(id("usi6"))</measurement_quantity>
+      <submatrix>#xpointer(id("usi8"))</submatrix>
+      <global_flag>15</global_flag>
+      <independent>0</independent>
+      <sequence_representation>explicit</sequence_representation>
+      <values>#xpointer(id("usi2"))</values>
+    </localcolumn>
+  </usi:data>
+
+</usi:tdm>
