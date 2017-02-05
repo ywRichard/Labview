@@ -218,6 +218,8 @@
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="MB Serial Master Query Write Multiple Registers (poly).vi" Type="VI" URL="../NI Modbus/MB Serial Master Query Write Multiple Registers (poly).vi"/>
+			<Item Name="MB Serial Init.vi" Type="VI" URL="../NI Modbus/MB Serial Init.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="3RV" Type="EXE">
