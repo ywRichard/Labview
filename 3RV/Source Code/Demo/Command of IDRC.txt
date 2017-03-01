@@ -1,0 +1,28 @@
+:SysTem:REMote;
+*IDN?;
+:SOURce:RTENable RAMP;
+:SOURce:RTIMe:UP 10.0;
+:SOURce:VOLTage:RANGe 150V;			//设置输出档位
+:SOURce:VOLTage:LIMit:HIGH 120;		//过压上限
+:SOURce:VOLTage 110;				//输出电压
+:SOURce:FREQuency:RANGe HZ;			//HZ / 50HZ / 60HZ / 400HZ
+:SOURce:FREQuency:LIMit:HIGH 63;	//频率上限
+:SOURce:FREQuency 60;				//
+:SOURce:CURRent:LIMit:HIGH 5;		//过流上限
+:CALCulate:FORMat PF;				//设定量测功能显示
+:OUTP ON;							//开始输出
+:FETCH?;
+:SYSTem:ERR?;
+
+:SysTem:REMote;
+:SysTem:LOCal;
+
+:SOURce:RTENable RAMP;
+:SOURce:RTENable ZERO;----disable ramp output function
+
+:SOURce:VOLTage:RANGe 150V/300V/600V;
+
+:SOURce:FREQuency:RANGe HZ;
+HZ: 40.00~500.0HZ,自定义输出
+50HZ/60HZ/400HZ：固定输出
+
